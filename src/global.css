@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply text-white min-h-screen font-inter;
+  }
+  .secondary-bg {
+    background-color: #2c323d;
+  }
+  .primary-bg {
+    background-color: #181e2a;
+  }
+  .custom-bg {
+    background-color: rgb(24, 30, 42);
+    background: -o-linear-gradient(
+      left,
+      rgba(24, 30, 42, 1) 0%,
+      rgba(41, 50, 67, 1) 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(24, 30, 42, 1)),
+      to(rgba(41, 50, 67, 1))
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(24, 30, 42, 1) 0%,
+      rgba(41, 50, 67, 1) 100%
+    );
+  }
+}
+@layer utilities {
+  .navbar {
+    @apply flex flex-1 justify-between items-center mb-2 py-2 px-5 
+    md:px-8 lg:px-14 md:mb-4 lg:mb-10;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #09090a;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #5c5c7b;
+    border-radius: 50px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #7878a3;
+  }
+  .common-container {
+    @apply flex flex-col flex-1 py-4 px-5  md:px-8  lg:px-14 
+    custom-scrollbar overflow-hidden;
+  }
+  .typed {
+    @apply h-[100px] transition-all;
+  }
+  .typed > .sympol {
+    @apply bg-white rounded-sm;
+    animation: typing 0.5s infinite;
+  }
+  @keyframes typing {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: #c2c2c2;
+      color: #c2c2c2;
+    }
+  }
+  .h1-bold {
+    @apply text-[36px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  .h1-semibold {
+    @apply text-[36px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .h2-bold {
+    @apply text-[30px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  .h3-bold {
+    @apply text-[24px] font-bold leading-[140%] tracking-tighter;
+  }
+  .base-semibold {
+    @apply text-[16px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .base-medium {
+    @apply text-[16px] font-medium leading-[140%];
+  }
+
+  .base-regular {
+    @apply text-[16px] font-normal leading-[140%];
+  }
+
+  .body-bold {
+    @apply text-[18px] font-bold leading-[140%];
+  }
+
+  .body-medium {
+    @apply text-[18px] font-medium leading-[140%];
+  }
+
+  .small-semibold {
+    @apply text-[14px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .small-medium {
+    @apply text-[14px] font-medium leading-[140%];
+  }
+
+  .small-regular {
+    @apply text-[14px] font-normal leading-[140%];
+  }
+
+  .subtle-semibold {
+    @apply text-[12px] font-semibold leading-[140%];
+  }
+
+  .tiny-medium {
+    @apply text-[10px] font-medium leading-[140%];
+  }
+  @media screen and (max-width: 768px) {
+    .hidden-image {
+      display: none;
+    }
+  }
+
+  .carousel-container {
+    @apply relative h-full w-full max-w-full
+    max-h-[200px] m-0 origin-center;
+  }
+
+  .carousel-content {
+    @apply absolute h-full  md:w-full origin-center transition-transform;
+  }
+  .carousel-content_items {
+    @apply absolute top-0 bottom-0 left-0 right-0 origin-center
+    rounded-md md:h-[40vw] h-full  w-52 md:w-11/12 
+    md:max-h-[200px];
+  }
+
+  .btn-primary {
+    @apply bg-[#6454D1] border-2 rounded-2xl py-2 px-4 
+    hover:bg-[#493E93] transition-all;
+  }
+  .btn-opacity {
+    @apply rounded-full h-12 w-12 text-transparent bg-white text-[#181e2a]
+    opacity-30 transition-opacity hover:opacity-80 font-bold shadow  shadow-black;
+  }
+  .flex-itemCenter {
+    @apply flex items-center gap-1;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .portfolio-container {
+    @apply flex  flex-col-reverse h-full  md:flex-row overflow-hidden relative;
+  }
+
+  @media screen and (min-width: 768px) {
+    .portfolio-container {
+      height: calc(100vh - 130px);
+    }
+  }
+
+  @keyframes pulse {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+}
