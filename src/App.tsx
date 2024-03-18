@@ -9,8 +9,8 @@ const App = () => {
     <main className=" relative h-full primary-bg  md:h-screen md:overflow-y-hidden">
       <Routes>
         <Route element={<RootLayout />}>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio-project/" element={<Homepage />} />
+          <Route path="/portfolio-project/portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
     </main>
