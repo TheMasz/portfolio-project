@@ -1,10 +1,10 @@
 export const navbarLinks = [
   {
-    route: "/",
+    route: "/portfolio-project/",
     label: "Home",
   },
   {
-    route: "/portfolio",
+    route: "/portfolio-project/portfolio",
     label: "Portfolio",
   },
 ];
