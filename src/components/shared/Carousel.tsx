@@ -4,7 +4,7 @@ import { portfoliosType } from "../../types";
 interface CarouselProps {
   items: portfoliosType[];
   currentIndex: number;
-  setCurrentIndex: (prevIndex: any) => number;
+  setCurrentIndex: (prevIndex: unknown) => number;
   mode: "vertical" | "horizontal";
 }
 
