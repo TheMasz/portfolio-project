@@ -15,14 +15,14 @@ const Carousel = ({
   mode,
 }: CarouselProps) => {
   const carouselRef = useRef<HTMLDivElement>(null);
-
+  
   const handleNextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+    setCurrentIndex((prevIndex: number) => (prevIndex + 1) % items.length);
   };
 
   const handlePrevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + items.length) % items.length
+      (prevIndex: number) => (prevIndex - 1 + items.length) % items.length
     );
   };
 
