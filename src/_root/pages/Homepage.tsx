@@ -139,7 +139,7 @@ const Homepage = () => {
       </div>
       <img
         className="hidden-image absolute bottom-0 right-0 z-10 w-[635px] h-[525px] "
-        src="/assets/images/clip.svg"
+        src="assets/images/clip.svg"
         alt="clip"
         loading="lazy"
       />

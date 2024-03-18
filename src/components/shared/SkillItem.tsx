@@ -8,7 +8,7 @@ const SkillItem = ({ label, type }: ISkill) => {
           width={32}
           height={32}
           className="rounded-full bg-gray-500"
-          src={`/assets/images/${
+          src={`assets/images/${
             type === "language"
               ? "language.png"
               : type === "framework" || type === "library"

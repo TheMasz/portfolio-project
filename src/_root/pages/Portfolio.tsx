@@ -87,7 +87,7 @@ const Portfolio = () => {
                   <Zoom>
                     <img
                       className="w-full h-72  object-contain "
-                      src={`/assets/images/projects/${portfolios[currentIndex].id}/${pic}`}
+                      src={`assets/images/projects/${portfolios[currentIndex].id}/${pic}`}
                       alt={`projectId${portfolios[currentIndex].id}`}
                       loading="lazy"
                     />
