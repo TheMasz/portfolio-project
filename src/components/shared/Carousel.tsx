@@ -4,7 +4,7 @@ import { portfoliosType } from "../../types";
 interface CarouselProps {
   items: portfoliosType[];
   currentIndex: number;
-  setCurrentIndex: (prevIndex: unknown) => number;
+  setCurrentIndex: React.Dispatch<React.SetStateAction<number>>;
   mode: "vertical" | "horizontal";
 }
 
@@ -17,12 +17,12 @@ const Carousel = ({
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const handleNextSlide = () => {
-    setCurrentIndex((prevIndex:number) => (prevIndex + 1) % items.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
   };
 
   const handlePrevSlide = () => {
     setCurrentIndex(
-      (prevIndex:number) => (prevIndex - 1 + items.length) % items.length
+      (prevIndex) => (prevIndex - 1 + items.length) % items.length
     );
   };
 

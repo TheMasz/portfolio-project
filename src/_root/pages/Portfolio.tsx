@@ -8,8 +8,8 @@ import "react-medium-image-zoom/dist/styles.css";
 
 const Portfolio = () => {
   const [loading, setLoading] = useState<boolean>(true);
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [currentImage, setCurrentImage] = useState<number>(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentImage, setCurrentImage] = useState(0);
   const [carouselMode, setCarouselMode] = useState<"vertical" | "horizontal">(
     "vertical"
   );
