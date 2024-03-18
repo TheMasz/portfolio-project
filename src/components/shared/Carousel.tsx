@@ -87,7 +87,7 @@ const Carousel = ({
             >
               <img
                 className="h-full w-full object-contain"
-                src={`/assets/images/projects/${item.id}/${item.pics[0]}`}
+                src={`assets/images/projects/${item.id}/${item.pics[0]}`}
                 alt={`projectId${item.id}`}
                 loading="lazy"
               />
