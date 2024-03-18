@@ -14,7 +14,7 @@ const Portfolio = () => {
     "vertical"
   );
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   const handleNextSlide = () => {
     const length = portfolios[currentIndex].pics.length;

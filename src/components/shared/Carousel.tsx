@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import { portfoliosType } from "../../types";
 
 interface CarouselProps {
@@ -14,7 +14,7 @@ const Carousel = ({
   setCurrentIndex,
   mode,
 }: CarouselProps) => {
-  const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   const handleNextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
@@ -26,10 +26,13 @@ const Carousel = ({
     );
   };
 
-  const calculateAngle = (index: number) => {
-    const totalItems = items.length;
-    return (index / totalItems) * 360;
-  };
+  const calculateAngle = useCallback(
+    (index: number) => {
+      const totalItems = items.length;
+      return (index / totalItems) * 360;
+    },
+    [items]
+  );
 
   useEffect(() => {
     if (carouselRef.current) {
@@ -43,9 +46,7 @@ const Carousel = ({
         )}deg)`;
       }
     }
-  }, [currentIndex, mode]);
-
-
+  }, [currentIndex, mode, calculateAngle]);
 
   return (
     <div
@@ -77,7 +78,7 @@ const Carousel = ({
                     ? currentIndex === index
                       ? "4px solid #6454D1"
                       : "4px solid #fff"
-                    : "", 
+                    : "",
                 transform:
                   mode === "vertical"
                     ? `rotateX(-${angle}deg) translateZ(35vw)`
