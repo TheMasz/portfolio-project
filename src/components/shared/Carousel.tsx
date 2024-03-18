@@ -4,7 +4,7 @@ import { portfoliosType } from "../../types";
 interface CarouselProps {
   items: portfoliosType[];
   currentIndex: number;
-  setCurrentIndex: (index: number) => void;
+  setCurrentIndex: (prevIndex: any) => number;
   mode: "vertical" | "horizontal";
 }
 
@@ -15,14 +15,14 @@ const Carousel = ({
   mode,
 }: CarouselProps) => {
   const carouselRef = useRef<HTMLDivElement>(null);
-  
+
   const handleNextSlide = () => {
-    setCurrentIndex((prevIndex: number) => (prevIndex + 1) % items.length);
+    setCurrentIndex((prevIndex:number) => (prevIndex + 1) % items.length);
   };
 
   const handlePrevSlide = () => {
     setCurrentIndex(
-      (prevIndex: number) => (prevIndex - 1 + items.length) % items.length
+      (prevIndex:number) => (prevIndex - 1 + items.length) % items.length
     );
   };
 
