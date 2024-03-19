@@ -153,7 +153,7 @@ const Portfolio = () => {
             <ul className="dev ">
               <div className="flex-itemCenter">
                 <svg
-                  className="w-6 h-6 text-gray-800 dark:text-white"
+                  className="w-6 h-6 text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -184,7 +184,7 @@ const Portfolio = () => {
             <ul className="fucntions">
               <div className="flex-itemCenter">
                 <svg
-                  className="w-6 h-6 text-gray-800 dark:text-white"
+                  className="w-6 h-6 text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -208,7 +208,7 @@ const Portfolio = () => {
             <div className="desc lg:mb-4">
               <div className="flex-itemCenter">
                 <svg
-                  className="w-6 h-6 text-gray-800 dark:text-white"
+                  className="w-6 h-6 text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -233,7 +233,7 @@ const Portfolio = () => {
           <div className="github">
             <div className="flex-itemCenter gap-1">
               <svg
-                className="w-6 h-6 text-gray-800 dark:text-white"
+                className="w-6 h-6 text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

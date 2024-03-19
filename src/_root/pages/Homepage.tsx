@@ -30,7 +30,7 @@ const Homepage = () => {
     <>
       <article className="mb-10 md:mb-2 lg:pt-14">
         <h2 className="text-light-1 h2-bold md:h1-bold text-left">
-          <Typed text="Hello I'm <br/>Tanawan Wongsawadee" speed={300}  />
+          <Typed text="Hello I'm <br/>Tanawan Wongsawadee" speed={300} />
         </h2>
         <p className="text-light-3 small-regular md:base-regular">
           web development who focuses on writing clean, elegant and efficient
@@ -44,7 +44,7 @@ const Homepage = () => {
             <div className="p-2 secondary-bg rounded-md">
               <div className="flex mb-1">
                 <svg
-                  className="w-6 h-6 mr-2 text-gray-800 dark:text-white"
+                  className="w-6 h-6 mr-2 text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -58,7 +58,7 @@ const Homepage = () => {
               </div>
               <div className="flex mb-1">
                 <svg
-                  className="w-6 h-6 mr-2 text-gray-800 dark:text-white"
+                  className="w-6 h-6 mr-2 text-white"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -78,10 +78,10 @@ const Homepage = () => {
               <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 <li className="mb-2 ms-4">
                   <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
-                  <time className=" text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  <time className=" text-sm font-normal leading-none text-gray-500">
                     2016-2019
                   </time>
-                  <h6 className="text-gray-900 dark:text-white leading-none">
+                  <h6 className="text-white leading-none">
                     Vocational Certificate
                   </h6>
                   <p className="tiny-medium md:small-regular text-gray-500 dark:text-gray-400">
@@ -90,25 +90,23 @@ const Homepage = () => {
                 </li>
                 <li className="mb-2 ms-4">
                   <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
-                  <time className=" text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  <time className=" text-sm font-normal leading-none text-gray-500">
                     2019-2021
                   </time>
-                  <h6 className="text-gray-900 dark:text-white leading-none">
+                  <h6 className="text-white leading-none">
                     High Vocational Certificate
                   </h6>
-                  <p className="tiny-medium md:small-regular text-gray-500 dark:text-gray-400">
+                  <p className="tiny-medium md:small-regular text-gray-400">
                     Computer Technology at Surin Technical College
                   </p>
                 </li>
                 <li className="mb-2 ms-4">
                   <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
-                  <time className=" text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  <time className=" text-sm font-normal leading-none text-gray-500">
                     2021-2024
                   </time>
-                  <h6 className=" text-gray-900 dark:text-white leading-none">
-                    Bachelor Degrees
-                  </h6>
-                  <p className="tiny-medium md:small-regular text-gray-500 dark:text-gray-400 ">
+                  <h6 className=" text-white leading-none">Bachelor Degrees</h6>
+                  <p className="tiny-medium md:small-regular text-gray-500 ">
                     Computer Engineering at Rajamangala University Of Technology
                     isan
                   </p>
