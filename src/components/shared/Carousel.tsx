@@ -108,7 +108,7 @@ const Carousel = ({
           <p>Prev</p>
           {mode === "vertical" ? (
             <svg
-              className="w-6 h-6 text-gray-800 dark:text-white"
+              className="w-6 h-6 text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -124,7 +124,7 @@ const Carousel = ({
             </svg>
           ) : (
             <svg
-              className="w-6 h-6 text-gray-800 dark:text-white"
+              className="w-6 h-6 text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -154,7 +154,7 @@ const Carousel = ({
           <p>Next</p>
           {mode === "vertical" ? (
             <svg
-              className="w-6 h-6 text-gray-800 dark:text-white"
+              className="w-6 h-6 text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -170,7 +170,7 @@ const Carousel = ({
             </svg>
           ) : (
             <svg
-              className="w-6 h-6 text-gray-800 dark:text-white"
+              className="w-6 h-6 text-white"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
