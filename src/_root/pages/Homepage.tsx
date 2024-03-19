@@ -78,19 +78,19 @@ const Homepage = () => {
               <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 <li className="mb-2 ms-4">
                   <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
-                  <time className=" text-sm font-normal leading-none text-gray-500">
+                  <time className=" text-sm font-normal leading-none text-gray-400">
                     2016-2019
                   </time>
                   <h6 className="text-white leading-none">
                     Vocational Certificate
                   </h6>
-                  <p className="tiny-medium md:small-regular text-gray-500 dark:text-gray-400">
+                  <p className="tiny-medium md:small-regular text-gray-400 ">
                     Computer Technology at Surin Technical College
                   </p>
                 </li>
                 <li className="mb-2 ms-4">
                   <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
-                  <time className=" text-sm font-normal leading-none text-gray-500">
+                  <time className=" text-sm font-normal leading-none text-gray-400">
                     2019-2021
                   </time>
                   <h6 className="text-white leading-none">
@@ -102,11 +102,11 @@ const Homepage = () => {
                 </li>
                 <li className="mb-2 ms-4">
                   <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
-                  <time className=" text-sm font-normal leading-none text-gray-500">
+                  <time className=" text-sm font-normal leading-none text-gray-400">
                     2021-2024
                   </time>
                   <h6 className=" text-white leading-none">Bachelor Degrees</h6>
-                  <p className="tiny-medium md:small-regular text-gray-500 ">
+                  <p className="tiny-medium md:small-regular text-gray-400 ">
                     Computer Engineering at Rajamangala University Of Technology
                     isan
                   </p>
