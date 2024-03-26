@@ -28,8 +28,8 @@ const Homepage = () => {
     <Loader />
   ) : (
     <>
-      <article className="mb-10 md:mb-2 lg:pt-14">
-        <h2 className="text-light-1 h2-bold md:h1-bold text-left">
+      <article className="mb-10 md:mb-2 lg:pt-14 lg:mb-4">
+        <h2 className="text-light-1 h2-bold md:h1-bold text-left lg:mb-4">
           <Typed text="Hello I'm <br/>Tanawan Wongsawadee" speed={300} />
         </h2>
         <p className="text-light-3 small-regular md:base-regular">
@@ -39,7 +39,7 @@ const Homepage = () => {
       </article>
       <div className="flex-1 w-full gap-10 z-20 md:flex md:w-full lg:w-4/5">
         <div className="flex flex-col w-full md:w-1/3 lg:2/6">
-          <div className="mb-2">
+          <div className="mb-2 md:mb-4">
             <h3 className="h4-bold md:h3-bold text-light-1">Contact</h3>
             <div className="p-2 secondary-bg rounded-md">
               <div className="flex mb-1">
