@@ -103,7 +103,7 @@ const Homepage = () => {
                 <li className="mb-2 ms-4">
                   <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
                   <time className=" text-sm font-normal leading-none text-gray-400">
-                    2021-2024
+                    2021-Present
                   </time>
                   <h6 className=" text-white leading-none">Bachelor Degrees</h6>
                   <p className="tiny-medium md:small-regular text-gray-400 ">
