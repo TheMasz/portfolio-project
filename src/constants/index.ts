@@ -35,6 +35,10 @@ export const skills = [
     type: "library",
   },
   {
+    label: "NextJS",
+    type: "library",
+  },
+  {
     label: "NodeJS",
     type: "library",
   },
@@ -48,10 +52,6 @@ export const skills = [
   },
   {
     label: "MongoDB",
-    type: "database",
-  },
-  {
-    label: "Appwrite",
     type: "database",
   },
   {
