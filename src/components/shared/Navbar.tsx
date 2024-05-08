@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <section className="navbar text-light-1">
-      <Link to="/">
+      <Link to="/portfolio-project/">
         <h2 className="text-light-1 h3-bold md:h2-bold text-left hover:text-light-3">THEMASZ</h2>
       </Link>
       <div className="flex gap-6">

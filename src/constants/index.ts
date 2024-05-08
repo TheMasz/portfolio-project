@@ -163,4 +163,26 @@ export const portfolios = [
     1. User 2. Administrator, where users can post pictures and captions and like and follow other users. Edit personal information Administrators can manage users, manage posts, etc.`,
     github: "https://github.com/TheMasz/ourgram",
   },
+  {
+    id: 4,
+    name: "Twitter Clone",
+    pics: [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+    ],
+    dev: ["AngularJS", "NextJS", "ExpressJS", "TailwindCSS", "MongoDB"],
+    functions: [
+      "Authenfication system",
+      "User Post, Like, Comment, Save Post, Delete Post, Follow, Edit Profile Actions",
+    ],
+    desc: `This project make for learning about AngularJS and NextJS like a Twitter clone`,
+    github: "https://github.com/TheMasz/twitterClone",
+  },
+  
 ];
