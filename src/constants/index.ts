@@ -36,7 +36,11 @@ export const skills = [
   },
   {
     label: "NextJS",
-    type: "library",
+    type: "framework",
+  },
+  {
+    label: "Angular",
+    type: "framework",
   },
   {
     label: "NodeJS",
@@ -181,7 +185,7 @@ export const portfolios = [
       "Authenfication system",
       "User Post, Like, Comment, Save Post, Delete Post, Follow, Edit Profile Actions",
     ],
-    desc: `This project make for learning about AngularJS and NextJS like a Twitter clone`,
+    desc: `This project make for learning about Angular and NextJS like a Twitter clone`,
     github: "https://github.com/TheMasz/twitterClone",
   },
   
