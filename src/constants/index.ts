@@ -130,7 +130,7 @@ export const portfolios = [
       "18.png",
       "19.png",
     ],
-    dev: ["ReactJS", "MongoDB", "NodeJS", "ExpressJS"],
+    dev: ["ReactJS (redux)", "ExpressJS", "CSS", "MongoDB"],
     functions: [
       "Authenfication system",
       "Seller management system",
@@ -188,5 +188,4 @@ export const portfolios = [
     desc: `This project make for learning about Angular and NextJS like a Twitter clone`,
     github: "https://github.com/TheMasz/twitterClone",
   },
-  
 ];
