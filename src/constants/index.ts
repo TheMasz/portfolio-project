@@ -95,16 +95,16 @@ export const portfolios = [
     functions: [
       "Authenfication system",
       "Recommended travelist locations and plans",
-      "Suggest locations around the location in your plan",
+      "Suggest locations around the location in your plan (5km.)",
+      "Suggest Navigative.",
       "Reviews and Update Profile",
       "Admin management system",
-      "Responsive support",
     ],
     desc: `This project is about recommending tourist attractions based on personal preferences. The system is divided into two parts.
     1. The system can recommend tourist attractions based on personal preferences.
     2. The system can recommend travel plans for people with similar preferences.
     Using the theory of cosine similarity to find similarities. And the user can plan a trip, and the system can recommend routes and places within a radius of 5 kilometers. To improve the recommendation of tourist attractions, a weight profile will be used based on reviews and ratings per place. If users give a high rating, it may mean that they like this type of place.`,
-    github: "https://github.com/TheMasz/ourgram",
+    github: "https://github.com/TheMasz/travelProject",
   },
   {
     id: 2,
