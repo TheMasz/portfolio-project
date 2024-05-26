@@ -1,3 +1,3 @@
 # Portfolio
 
-This website to keep my portfolio
+This website is to keep my portfolios.
