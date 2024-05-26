@@ -130,11 +130,7 @@ export const portfolios = [
       "18.png",
       "19.png",
     ],
-<<<<<<< HEAD
     dev: ["React Redux", "ExpressJS", "CSS", "MongoDB"],
-=======
-    dev: ["ReactJS (redux)", "ExpressJS", "CSS", "MongoDB"],
->>>>>>> 518382631e31b7d6762498dabb7078145069b132
     functions: [
       "Authenfication system",
       "Browse and Categorize Products",
