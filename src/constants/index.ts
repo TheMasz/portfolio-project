@@ -183,7 +183,7 @@ export const portfolios = [
     ],
     dev: ["AngularJS", "NextJS", "ExpressJS", "TailwindCSS", "MongoDB"],
     functions: [
-      "User authentication",
+      "Authentication: Users can sign up, log in, and log out.",
       "Posting tweets",
       "Viewing a feed of tweets",
       "Following and unfollowing other users",
@@ -210,7 +210,7 @@ export const portfolios = [
     ],
     dev: ["React Redux", "ExpressJS", "TailwindCSS", "MongoDB"],
     functions: [
-      "User registration and login",
+      "Authentication: Users can sign up, log in, and log out.",
       "Browse and category products",
       "Add products to a shopping cart",
       "Checkout and payment processing using Stripe",
@@ -219,5 +219,17 @@ export const portfolios = [
     ],
     desc: `This project is a simple e-commerce website developed for learning purposes. It allows users to browse products, add them to a shopping cart, and make purchases using the Stripe payment gateway`,
     github: "https://github.com/TheMasz/Shoping-StripePayment",
+  },
+  {
+    id: 6,
+    name: "Chat-WebSocket",
+    pics: ["1.png", "2.png", "3.png", "4.png"],
+    dev: ["React", "WebSocket", "ExpressJS", "TailwindCSS", "MongoDB"],
+    functions: [
+      "Authentication: Users can sign up, log in, and log out.",
+      "Real-time: Chating and notification chat",
+    ],
+    desc: `This project is a real-time chat application developed for learning purposes. It allows users to engage in instant messaging with others and receive notifications for new messages in real-time. The project integrates various technologies such as React for the frontend, WebSocket for real-time communication, ExpressJS for the backend, TailwindCSS for styling, and MongoDB for data storage.`,
+    github: "https://github.com/TheMasz/chat-websocket",
   },
 ];
