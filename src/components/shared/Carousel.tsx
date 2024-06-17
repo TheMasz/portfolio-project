@@ -16,20 +16,50 @@ const Carousel = ({
 }: CarouselProps) => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  const handleNextSlide = () => {
+  const handlePrevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
   };
 
-  const handlePrevSlide = () => {
+  const handleNextSlide = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + items.length) % items.length
     );
   };
 
+  // const calculateAngle = useCallback(
+  //   (index: number) => {
+  //     const totalItems = items.length;
+  //     return (index / totalItems) * 360;
+  //   },
+  //   [items]
+  // );
+
+  // useEffect(() => {
+  //   if (carouselRef.current) {
+  //     if (mode === "vertical") {
+  //       carouselRef.current.style.transform = `translateZ(-30vw) rotateX(${calculateAngle(
+  //         currentIndex
+  //       )}deg)`;
+  //     } else {
+  //       carouselRef.current.style.transform = `translateZ(-30vw) rotateY(${calculateAngle(
+  //         currentIndex
+  //       )}deg)`;
+  //     }
+  //   }
+  // }, [currentIndex, mode, calculateAngle]);
+
   const calculateAngle = useCallback(
-    (index: number) => {
-      const totalItems = items.length;
-      return (index / totalItems) * 360;
+    (index: number, currentIndex: number) => {
+      const angleStep = 120; 
+      let offset = index - currentIndex;
+
+      if (offset > items.length / 2) {
+        offset -= items.length;
+      } else if (offset < -items.length / 2) {
+        offset += items.length;
+      }
+
+      return offset * angleStep;
     },
     [items]
   );
@@ -38,10 +68,12 @@ const Carousel = ({
     if (carouselRef.current) {
       if (mode === "vertical") {
         carouselRef.current.style.transform = `translateZ(-30vw) rotateX(${calculateAngle(
+          currentIndex,
           currentIndex
         )}deg)`;
       } else {
         carouselRef.current.style.transform = `translateZ(-30vw) rotateY(${calculateAngle(
+          currentIndex,
           currentIndex
         )}deg)`;
       }
@@ -65,7 +97,7 @@ const Carousel = ({
         }}
         ref={carouselRef}
       >
-        {items.map((item: portfoliosType, index: number) => {
+        {/* {items.map((item: portfoliosType, index: number) => {
           const angle = calculateAngle(index);
           return (
             <div
@@ -93,6 +125,44 @@ const Carousel = ({
               />
             </div>
           );
+        })} */}
+        {items.map((item, index) => {
+          const angle = calculateAngle(index, currentIndex);
+          const isCurrent = index === currentIndex;
+          const isTop = (index + 1) % items.length === currentIndex;
+          const isBottom =
+            (index - 1 + items.length) % items.length === currentIndex;
+
+          if (isCurrent || isTop || isBottom) {
+            return (
+              <div
+                key={index}
+                className="carousel-content_items p-4"
+                style={{
+                  border:
+                    mode === "vertical"
+                      ? isCurrent
+                        ? "4px solid #6454D1"
+                        : "4px solid #fff"
+                      : "",
+                  transform:
+                    mode === "vertical"
+                      ? `rotateX(${angle}deg) translateZ(35vw)`
+                      : `rotateY(${angle}deg) translateZ(35vw)`,
+                  transition: "transform 0.5s ease",
+                }}
+              >
+                <img
+                  className="h-full w-full object-contain"
+                  src={`assets/images/projects/${item.id}/${item.pics[0]}`}
+                  alt={`projectId${item.id}`}
+                  loading="lazy"
+                />
+              </div>
+            );
+          }
+
+          return null;
         })}
       </div>
       <button
@@ -102,7 +172,7 @@ const Carousel = ({
             : "bottom-[-70px] left-[30%]  -translate-x-[30%]"
         }  
         -translate-x-[45.8333335%] btn-primary base-medium `}
-        onClick={handlePrevSlide}
+        onClick={mode==="vertical" ? handlePrevSlide : handleNextSlide}
       >
         <div className="flex-itemCenter">
           <p>Prev</p>
@@ -148,7 +218,7 @@ const Carousel = ({
             : "bottom-[-70px] right-[30%] translate-x-[30%]"
         }
         -translate-x-[45.8333335%] btn-primary base-medium`}
-        onClick={handleNextSlide}
+        onClick={mode==="vertical" ? handleNextSlide : handlePrevSlide}
       >
         <div className="flex-itemCenter">
           <p>Next</p>

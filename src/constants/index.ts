@@ -43,7 +43,7 @@ export const skills = [
     type: "framework",
   },
   {
-    label: "NodeJS",
+    label: "ExpressJS",
     type: "library",
   },
   {

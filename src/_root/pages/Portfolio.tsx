@@ -135,6 +135,12 @@ const Portfolio = () => {
                 />
               </svg>
             </button>
+            <div
+              className=" absolute top-0 right-0 p-1 bg-white rounded-sm
+            opacity-30 transition-opacity font-medium text-[#181e2a] shadow  shadow-black"
+            >
+              click for zoom
+            </div>
           </div>
 
           <div className="flex justify-center gap-2 my-2 lg:mb-10">
