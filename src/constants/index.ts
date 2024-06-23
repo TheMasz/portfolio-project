@@ -39,12 +39,12 @@ export const skills = [
     type: "framework",
   },
   {
-    label: "Angular",
-    type: "framework",
-  },
-  {
     label: "ExpressJS",
     type: "library",
+  },
+  {
+    label: "Angular",
+    type: "framework",
   },
   {
     label: "Laravel",
@@ -56,10 +56,6 @@ export const skills = [
   },
   {
     label: "MongoDB",
-    type: "database",
-  },
-  {
-    label: "Firebase",
     type: "database",
   },
   {
