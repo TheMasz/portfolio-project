@@ -96,10 +96,7 @@ export const portfolios = [
       "Reviews and Update Profile",
       "Admin management system",
     ],
-    desc: `This project is about recommending tourist attractions based on personal preferences. The system is divided into two parts.
-    1. The system can recommend tourist attractions based on personal preferences.
-    2. The system can recommend travel plans for people with similar preferences.
-    Using the theory of cosine similarity to find similarities. And the user can plan a trip, and the system can recommend routes and places within a radius of 5 kilometers. To improve the recommendation of tourist attractions, a weight profile will be used based on reviews and ratings per place. If users give a high rating, it may mean that they like this type of place.`,
+    desc: `This project aims to provide personalized travel recommendations to users based on their preferences and interests. By utilizing cosine similarity, the system compares user profiles with destination attributes to suggest the most suitable travel destinations. The core functions include recommending travel destinations and tourist attractions based on user preferences and interests, suggesting travel plans by comparing similar user profiles to provide tailored recommendations, assisting users in creating travel itineraries with step-by-step guidance on how to reach various destinations (non-realtime navigation), and recommending travel destinations within a 5km radius of a chosen location. Additionally, the recommendation system can be improved through user reviews of tourist attractions, allowing users to rate and provide feedback on their experiences.`,
     github: "https://github.com/TheMasz/travelProject",
   },
   {
