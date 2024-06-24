@@ -31,15 +31,15 @@ export const skills = [
     type: "language",
   },
   {
-    label: "ReactJS",
+    label: "React",
     type: "library",
   },
   {
-    label: "NextJS",
+    label: "Next",
     type: "framework",
   },
   {
-    label: "ExpressJS",
+    label: "Express",
     type: "library",
   },
   {
