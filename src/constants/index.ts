@@ -188,7 +188,7 @@ export const portfolios = [
   },
   {
     id: 5,
-    name: "Shoping-StripePayment",
+    name: "Ecommerce-StripePayment",
     pics: [
       "1.png",
       "2.png",
