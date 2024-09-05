@@ -57,7 +57,7 @@ const Homepage = () => {
                   t.tanawan.w@gmail.com
                 </p>
               </div>
-         
+
               <div className="flex mb-1">
                 <svg
                   className="w-6 h-6 mr-2 text-white"
@@ -90,21 +90,20 @@ const Homepage = () => {
             <div className="p-2 secondary-bg rounded-md">
               <ol className="relative border-s border-gray-200 dark:border-gray-700">
                 <li className="mb-2 ms-4">
-                  <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
+                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
                   <time className=" text-sm font-normal leading-none text-gray-400">
-                    2016-2019
+                    2021-Present
                   </time>
-                  <h6 className="text-white leading-none">
-                    Vocational Certificate
-                  </h6>
+                  <h6 className=" text-white leading-none">Bachelor Degrees</h6>
                   <p className="tiny-medium md:small-regular text-gray-400 ">
-                    Computer Technology at Surin Technical College
+                    Computer Engineering at Rajamangala University Of Technology
+                    isan
                   </p>
                 </li>
                 <li className="mb-2 ms-4">
                   <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
                   <time className=" text-sm font-normal leading-none text-gray-400">
-                    2019-2021
+                    2019-2020
                   </time>
                   <h6 className="text-white leading-none">
                     High Vocational Certificate
@@ -114,14 +113,15 @@ const Homepage = () => {
                   </p>
                 </li>
                 <li className="mb-2 ms-4">
-                  <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
+                  <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-white bg-white" />
                   <time className=" text-sm font-normal leading-none text-gray-400">
-                    2021-Present
+                    2016-2018
                   </time>
-                  <h6 className=" text-white leading-none">Bachelor Degrees</h6>
+                  <h6 className="text-white leading-none">
+                    Vocational Certificate
+                  </h6>
                   <p className="tiny-medium md:small-regular text-gray-400 ">
-                    Computer Engineering at Rajamangala University Of Technology
-                    isan
+                    Computer Technology at Surin Technical College
                   </p>
                 </li>
               </ol>
